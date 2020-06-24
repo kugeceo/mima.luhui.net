@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="gbk">
+<title>鲁虺密码生成器</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+table{margin: 250px auto;text-align: center; border-right:1px solid #ddd;border-bottom:1px solid #ddd;}
+thead,tfoot{background: #fff;font-weight: 800;}
+tbody{background: #f5f5f5;}
+table td{border-left:1px solid #ddd;border-top:1px solid #ddd;padding: 5px 10px;}
+table tbody td input{width:270px;}
+</style>
+</head>
+<body>
+    <table border="0" cellspacing="0" cellpadding="0">
+   <thead>
+  <tr><td colspan="2">鲁虺密码生成器</td></tr>
+   </thead>
+   <tbody>
+  <tr>
+ <td>密码长度</td>
+ <td><input type="text" value="32" placeholder="密码长度"></td>
+  </tr>
+  <tr>
+ <td>密码</td>
+ <td><input type="text" value="" placeholder="密码"></td>
+  </tr>
+ 
+   </tbody>
+   <tfoot>
+  <tr><td colspan="2"><input type="button" value="生成"></td></tr>
+   </tfoot>
+    </table>
+    <script>
+   var input = document.getElementsByTagName('input');
+   input[2].onclick = function () {
+  input[1].value = rand(input[0].value);
+   }
+   function rand (leng) {
+  var key = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*';
+  var keys = '';
+  for (i = 0; i < leng; i++) {
+ var keyl = parseInt(key.length * Math.random());
+ keys += key[keyl];
+  }
+  return keys;
+   }
+    </script>
+</body>
+</html>
