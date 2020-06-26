@@ -1,0 +1,74 @@
+body {
+color:#fff;
+background-color: #24303a;
+font-family: Helvetica;
+text-align: center;
+}
+textarea {
+resize: none;
+border: none;
+}
+h1 {
+color:#fff;
+font-size: 2vw;
+line-height: 0px;
+margin-top: 20px;
+}
+.container {
+padding: 20px;
+width: 100%;
+max-width: 100%;
+display: inline-block;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+input[type="button"] {
+background: rgba(0, 0, 0, 0.3);
+border: 0;
+width: 80px;
+height: 30px;
+border-radius: 0;
+color: #fff;
+font-size: 12px;
+cursor: pointer;
+transition: background 0.3s ease-in-out;
+}
+input[type="reset"] {
+background: rgba(0, 0, 0, 0.3);
+border: 0;
+width: 80px;
+height: 30px;
+border-radius: 0;
+color: #fff;
+font-size: 12px;
+cursor: pointer;
+transition: background 0.3s ease-in-out;
+}
+.main {
+color: #4a667a;
+text-align: center;
+position: relative;
+height: auto;
+width: 100%;
+background-color: #1e2730;
+display: inline-block;
+float: center;
+position: relative;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+margin: 10px;
+padding: 15px 20px 65px 20px;
+}
+@media screen and (max-width: 700px) {
+.main {
+width: calc(100% - 20px);
+}
+}
+@media screen and (min-width: 700px) {
+.main {
+width: calc(60% - 20px);
+}
+}
+
