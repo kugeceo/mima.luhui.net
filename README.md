@@ -12,7 +12,12 @@ http://mimas.netlify.com
 http://mimas.netlify.app
 
 
+# LuHui HTML Decryptor
+http://mima.luhui.net/decryptor/
 
+
+# LuHui HTML Encryptor
+http://mima.luhui.net/encryptor
 
 
 
